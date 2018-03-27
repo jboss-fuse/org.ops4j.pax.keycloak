@@ -19,16 +19,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.ops4j</groupId>
-        <artifactId>master</artifactId>
-        <version>4.3.0</version>
-    </parent>
-
     <name>Pax Keycloak</name>
     <groupId>org.ops4j.pax</groupId>
     <artifactId>keycloak</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.0.fuse-000001</version>
     <packaging>pom</packaging>
 
     <scm>
@@ -228,5 +222,18 @@
         <module>pax-keycloak-hawtio</module>
         <module>pax-keycloak-features</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>jboss-releases-repository</id>
+            <name>JBoss Releases Repository</name>
+            <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+            <id>jboss-snapshots-repository</id>
+            <name>JBoss Snapshots Repository</name>
+            <url>https://repository.jboss.org/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
